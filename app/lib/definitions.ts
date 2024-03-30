@@ -9,10 +9,36 @@ export type User = {
   password: string;
 };
 
+export type Farmer = {
+  id: string;
+  name: string;
+  email: string;
+  farm_name: string;
+  image_url: string;
+};
+
+export type Admin = {
+  id: string;
+  name: string;
+  email: string;
+  position: string;
+  image_url: string;
+};
+
+export type Product = {
+  id: string;
+  name: string;
+  owner: string;
+  price: number;
+  quantity: number;
+  image_url: string; 
+};
+
 export type Customer = {
   id: string;
   name: string;
   email: string;
+  location: string;
   image_url: string;
 };
 

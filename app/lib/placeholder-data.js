@@ -72,6 +72,55 @@ const customers = [
   },
 ];
 
+const admins = [
+  {
+    name: 'Hannan',
+    email: 'hannan@farmcart.com',
+    position: 'Senior Engineer',
+    image_url: '/customers/amy-burns.png',
+  },
+  {
+    name: 'Sanchet',
+    email: 'sanchet@farmcart.com',
+    position: 'Database administrator',
+    image_url: '/customers/balazs-orban.png',
+  },
+];
+
+const farmers = [
+  {
+    name: 'Manit',
+    email: 'manit@farmer.com',
+    farm_name: 'Khira Farms',
+    location: 'Pune',
+    image_url: '/customers/evil-rabbit.png',
+  },
+  {
+    name: 'Chetan',
+    email: 'chetan@farmer.com',
+    farm_name: 'Narang Courtyard',
+    location: 'Nagpur',
+    image_url: '/customers/michael-novotny.png',
+  },
+];
+
+const products = [
+  {
+    name: 'Tomato',
+    owner: 'Khira Farms',
+    price: 10,
+    quantity: 100,
+    image_url: '/products/tomato.webp',
+  },
+  {
+    name: 'Potatoes',
+    owner: 'Narangs Courtyard',
+    price: 20,
+    quantity: 200,
+    image_url: '/products/potato.jpg',
+  },
+];
+
 const invoices = [
   {
     customer_id: customers[0].id,
@@ -185,4 +234,7 @@ module.exports = {
   customers,
   invoices,
   revenue,
+  products,
+  admins,
+  farmers,
 };
